@@ -1,0 +1,32 @@
+{
+  "name": "@evanminto/multi-check-element",
+  "version": "1.0.0",
+  "description": "Zero-dependency custom element that reflects a checkbox's state to multiple checkboxes",
+  "main": "src/index.js",
+  "repository": "git@github.com:evanminto/multi-check-element.git",
+  "author": "Evan Minto <evan.minto@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^2.10.3"
+  },
+  "targets": {
+    "default": {
+      "source": "src/index.js",
+      "outputFormat": "esmodule",
+      "distDir": "dist/",
+      "isLibrary": true
+    },
+    "global": {
+      "source": "src/global.js",
+      "outputFormat": "global",
+      "distDir": "dist/"
+    }
+  },
+  "scripts": {
+    "watch": "parcel",
+    "build": "parcel build",
+    "jest": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "test": "eslint && tsc --p ./tsconfig.json && yarn jest",
+    "demo-server": "http-server ."
+  }
+}

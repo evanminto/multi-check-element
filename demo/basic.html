@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Multi-Check Element: Basic</title>
+    <script src="../dist/global.js" defer=""></script>
+  </head>
+  <body>
+    <label for="all">Check All</label>
+    <multi-check controls="one two three">
+      <input type="checkbox" id="all">
+    </multi-check>
+
+    <ol>
+      <li>
+        <input type="checkbox" id="one">
+        <label for="one">One</label>
+      </li>
+      <li>
+        <input type="checkbox" id="two">
+        <label for="two">Two</label>
+      </li>
+      <li>
+        <input type="checkbox" id="three">
+        <label for="three">Three</label>
+      </li>
+    </ol>
+  </body>
+</html>
